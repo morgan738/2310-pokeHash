@@ -66,6 +66,7 @@ async function getAllPokemon() {
 async function render () {
     //map over our list of all pokemon and make "html"
     const pokeList = pokemons.map((poke) => {
+        //the <a> tag with href here is what changes our hash in the url
         return `<a href=#${poke.name} class="pokeItem"> ${poke.name} </a>`
     })
     
